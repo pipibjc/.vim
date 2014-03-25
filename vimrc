@@ -32,6 +32,7 @@
   " NeoBundle 'guns/xterm-color-table.vim'
   " vim-airline : Lean & mean status/tabline for vim that's light as air.
   NeoBundle 'bling/vim-airline'
+  set laststatus=2
 
   """ Edit
   " Intelligent autocompletion for quotes, parenthesis, brackets
@@ -58,6 +59,8 @@
   " NeoBundle 'majutsushi/tagbar'
   " csv.vim : display pretty csv file
   NeoBundle 'csv.vim'
+  " pdurbin/vim-tsv
+  NeoBundle 'pdurbin/vim-tsv'
   " Twinside/vim-cuteErrorMarker : mark compilation errors
   " NeoBundle 'Twinside/vim-cuteErrorMarker
   " airblade/vim-gitgutter : show signs on modified lines
@@ -78,7 +81,7 @@
   " NeoBundle 'davidhalter/jedi-vim'
   " tell-k/vim-autopep8 : applies autopep8 to current file by :Autopep8
   NeoBundle 'tell-k/vim-autopep8'
-  
+
   " If there are uninstalled bundles found on startup,
   " this will conveniently prompt you to install them.
   NeoBundleCheck

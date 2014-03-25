@@ -4,24 +4,16 @@
 " Modified from
 " http://www.erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/
 " This part will install neobundle at the first time to start vim editor
-  let iCanHazNeoBundle=1
   let neobundle_readme=expand('~/.vim/bundle/neobundle.vim/README.md')
   if !filereadable(neobundle_readme)
       echo "Installing NeoBundle.."
       echo ""
       silent !mkdir -p ~/.vim/bundle
       silent !git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-      let iCanHazNeoBundle=0
   endif
+
   set rtp+=~/.vim/bundle/neobundle.vim/
   call neobundle#rc(expand('~/.vim/bundle/'))
-  if iCanHazNeoBundle == 0
-      echo "Installing Bundles, please ignore key map error messages"
-      echo ""
-      :NeoBundleInstall
-  endif
-" ----------------------- Install NeoBundle end
-
 
 """ Setup NeoBundle to manage bundles
   NeoBundleFetch 'Shougo/neobundle.vim'

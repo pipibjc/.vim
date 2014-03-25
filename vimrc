@@ -125,10 +125,6 @@ set tags=tags;/
   set term=xterm-256color
   colorscheme jellybeans
 
-" note: cindent and smartindent do the wrong thing with e.g. indented lines
-" starting with # in certain files.
-" so i think autoindent is more minimal and good default for all filetypes.
-" again, most files will be covered by the previous line.
 set autoindent
 
 set smarttab

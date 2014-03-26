@@ -33,6 +33,8 @@
   " vim-airline : Lean & mean status/tabline for vim that's light as air.
   NeoBundle 'bling/vim-airline'
   set laststatus=2
+  " tpope/vim-fugitive : git wrapper for vim
+  NeoBundle 'tpope/vim-fugitive'
 
   """ Edit
   " Intelligent autocompletion for quotes, parenthesis, brackets

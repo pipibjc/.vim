@@ -13,7 +13,7 @@
   endif
 
   set rtp+=~/.vim/bundle/neobundle.vim/
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
 
 """ Setup NeoBundle to manage bundles
   NeoBundleFetch 'Shougo/neobundle.vim'
@@ -87,6 +87,8 @@
   " If there are uninstalled bundles found on startup,
   " this will conveniently prompt you to install them.
   NeoBundleCheck
+
+  call neobundle#end()
 
 " ----------------------- NeoBundle setup end
 
